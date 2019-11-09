@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "920830431546",
+    "firebase_url": "https://gali-shops.firebaseio.com",
+    "project_id": "gali-shops",
+    "storage_bucket": "gali-shops.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:920830431546:android:134ad35a8830f25bc7c003",
+        "android_client_info": {
+          "package_name": "com.example.gali_partners"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "920830431546-tebv0bd07u9fuave2kb64tt272cjfpuj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBU0Z-pRWefhQ_s7jzVGkWY3RqrQADMsvo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "920830431546-tebv0bd07u9fuave2kb64tt272cjfpuj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:920830431546:android:06a7d3c37956428dc7c003",
+        "android_client_info": {
+          "package_name": "com.example.gali_shops"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "920830431546-tebv0bd07u9fuave2kb64tt272cjfpuj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBU0Z-pRWefhQ_s7jzVGkWY3RqrQADMsvo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "920830431546-tebv0bd07u9fuave2kb64tt272cjfpuj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
