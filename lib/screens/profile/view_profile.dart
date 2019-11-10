@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gali_partners/others/data/local_data.dart';
 import 'package:gali_partners/screens/profile/profile_api.dart';
+import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 class ViewProfile extends StatefulWidget {
   @override
@@ -11,6 +12,12 @@ class ViewProfile extends StatefulWidget {
 
 class ViewProfileState extends State<ViewProfile> {
   ProfileApi _api = ProfileApi();
+  GoogleMapController mapController;
+
+  void _onMapCreated(GoogleMapController controller) {
+    mapController = controller;
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,17 +44,30 @@ class ViewProfileState extends State<ViewProfile> {
                       Card(
                         child: Text(infoData["Address"]),
                       ),
+                      SizedBox(
+                        width: 400,
+                        height: 400,
+                        child: GoogleMap(
+                          onMapCreated: _onMapCreated,
+                          zoomGesturesEnabled: true,
+                          initialCameraPosition: CameraPosition(
+                            target: LatLng(double.parse(infoData["Latitude"]), double.parse(infoData["Longitude"])),
+                            zoom: 11.0,
+                          ),
+                        ),
+                      ),
                       TextField(
                         enabled: false,
                         decoration: InputDecoration(
                             labelText: infoData["Phone"],
                             labelStyle: TextStyle(color: Colors.black)),
                       ),
-                      
                       TextField(
                         enabled: false,
                         decoration: InputDecoration(
-                            labelText: "View at Home Price :"+infoData["ViewAtHomePrice"] + "Rs",
+                            labelText: "View at Home Price :" +
+                                infoData["ViewAtHomePrice"] +
+                                "Rs",
                             labelStyle: TextStyle(color: Colors.black)),
                       )
                     ],
