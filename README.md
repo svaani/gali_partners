@@ -17,4 +17,5 @@ samples, guidance on mobile development, and a full API reference.
 
 Trying to associate firebase from logged in google id so that no organisation targets to own the data
 Data should be owned by individual shop owners - in otherwords similar to distributed.
-test22
+
+newpr
